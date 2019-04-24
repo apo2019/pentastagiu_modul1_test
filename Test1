@@ -1,0 +1,75 @@
+1. What is regression? What is retesting?
+Regression Testing is usually performed before the release in Production of the sofware. It is used for retesting the major functionalities after deployment of new changes or fixes, in order to ensure that they still work as expected.
+Retesting Testing is usually performed after a defect is fixed, in order to ensure that the issue was corrected and not reproducible anymore.
+
+
+2. What is the relationship between the following: error, bug, defect, fault, failure.
+The relationship between the above mentioned is that they all show issues found in the software application or product.
+
+
+3. Name the difference between agile & v-model. (Please specify some roles and cycles for these)
+In Agile Model the planning and estimation for the tasks is done with the entire team, whereas in V-Model all phases are separate and each of them is done by separate people.
+
+
+4. Please state what is black box testing? How about white box testing? You can also give an example.
+Black Box Testing is the type of methodology that offers access to the tester only to the Business Specifications documents and application, whereas White Box Testing is the type of methodology where the tester can also have access to the code itself.
+
+
+5. In the images folder you have a login form. Create Test Cases for the given form.
+Click on Sign In button from Welcome Back. -> User should see the login screen with E-mail, Password, Forgot your Password, Sign In and available icons.
+Insert invalid input for E-mail field. -> Error message should be displayed.
+Insert invalid input for Password field. -> Error message should be displayed, mentioning that Password should contain a minimum of mixed symbols.
+Insert valid input for E-mail field. -> The input should be allowed and no error message should be displayed.
+Insert valid input for Password field. -> The input should be allowed and no error message should be displayed.
+Click on Sign In without inserting anything. -> Error message should be displayed.
+Click on Sign In without inserting E-mail. -> Error message should be displayed.
+Click on Sign In without inserting Password. -> Error message should be displayed.
+Click on Forgot your Password. -> A popup message with steps to follow should be displayed.
+Click on the first icon (Facebook). -> User should be redirected to Sign In page and can insert the Facebook credentials.
+Click on the second icon (Google+). -> User should be redirected to Sign In page and can insert the Google+ credentials.
+Click on the third icon (Linkedin). -> User should be redirected to Sign In page and can insert the Linkedin credentials.
+Check the performance when multiple users try to login in. -> Sign In page should be stable.
+
+
+Click on Sign Up button from Hello Friend. -> User should see the create account screen with Name, E-mail, Password, Sign Up and available icons.
+Insert invalid input for Name field. -> Error message should be displayed, mentioning that Name should be of a minimum number of characters.
+Insert invalid input for E-mail field. -> Error message should be displayed.
+Insert invalid input for Password field. -> Error message should be displayed, mentioning that Password should contain a minimum of mixed symbols.
+Insert valid input for Name field. -> The input should be allowed and no error message should be displayed.
+Insert valid input for E-mail field. -> The input should be allowed and no error message should be displayed.
+Insert valid input for Password field. -> The input should be allowed and no error message should be displayed.
+Click on Sign Up without inserting anything. -> Error message should be displayed.
+Click on Sign Up without inserting Name. -> Error message should be displayed.
+Click on Sign Up without inserting E-mail. -> Error message should be displayed.
+Click on Sign Up without inserting Password. -> Error message should be displayed.
+Click on the first icon (Facebook). -> User should be redirected to Sign Up page and can insert the Facebook credentials.
+Click on the second icon (Google+). -> User should be redirected to Sign Up page and can insert the Google+ credentials.
+Click on the third icon (Linkedin). -> User should be redirected to Sign Up page and can insert the Linkedin credentials.
+Check the performance when multiple users try to sign up. -> Sign Up page should be stable.
+
+
+6. Please state the testing types(functional, non-functional, black box, white box, design technique) for each TC created.
+Each test case is functional and under black box, except for the ones that check the performance, which are non-functional.
+
+
+7. Consider that you have found a defect in the form for the previous exercise. Create a bug report for it.
+Summary: Sign In form is read only.
+
+Description:
+Pre-requisites:
+Chrome Browser, Version 73.0.3683.103 (Official Build) (64-bit)
+Steps to reproduce:
+1. Open the diprella_login image on Chrome Browser.
+2. Press on the Sign In button from Welcome Back.
+3. Insert valid credentials and click on Sign In.
+
+Expected result:
+3. The credentials should be inserted and the user should be logged in.
+
+Actual result:
+3. The form is read only and nothing can be inserted.
+
+Severity = 1
+Priority = 1
+Environment = UAT
+Test cycle = Acceptance Test
